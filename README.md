@@ -57,10 +57,13 @@ source venv/bin/activate
 ```
 Docker image and start the containers with Docker Compose:
 
-docker-compose up --build
+docker build -t mon_application_flask .
+
+docker run -p 5001:5001 mon_application_flask
+
 ```
 ```
-Open your browser and navigate to http://localhost:5001/ or http://0.0.0.0:5001/ or to access the API graphical interface.
+Open your browser and navigate to http://localhost:5001/ or http://127.0.0.1:5001 or to access the API graphical interface.
 ```
 
 ## CONFIGURATION: 
